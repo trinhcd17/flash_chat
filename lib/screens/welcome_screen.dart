@@ -46,13 +46,16 @@ class _WelcomeScreenState extends State<WelcomeScreen> with SingleTickerProvider
                   tag: 'logo',
                   child: Container(
                     child: Image.asset('images/logo.png'),
-                    height: controller.value*100,
+                    height: 60,
                   ),
                 ),
                 TypewriterAnimatedTextKit(
+                  speed: Duration(milliseconds: 400),
+                  isRepeatingAnimation: true,
                   text: ['Flash Chat'],
                   textStyle: TextStyle(
                     fontSize: 45.0,
+                    color: Colors.black,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
